@@ -1,6 +1,5 @@
 import React from 'react';
 import RelativeList from './components/RelativeList';
-
 const App = () => {
   return (
     <div id="main">
