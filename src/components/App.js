@@ -1,12 +1,16 @@
-import React from 'react';
-import RelativeList from './components/RelativeList';
+import React from 'react'
+
 const App = () => {
+  const names = ["A","B","C","D"]
   return (
     <div id="main">
-      {/* Do not remove the main div */}
-      <RelativeList />
+               <ol key={"relativeList"}>
+    {
+      names.map((i,index)=>(<li key={`relativeListItem${index}`}>{i}</li>))
+    }
+              </ol>
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App
